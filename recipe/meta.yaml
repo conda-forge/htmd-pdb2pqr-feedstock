@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   entry_points:
     - pdb2pqr_cli = pdb2pqr.main:main
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
@@ -24,7 +24,7 @@ requirements:
   run:
     - python 
     - setuptools
-    - propka
+    - propka 3.1.0
     - networkx
     - future
     - six
